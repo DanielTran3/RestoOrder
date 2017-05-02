@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.phomarble.restoorder.MainMenu">
+    tools:context="com.phomarble.restoorder.OrderScreen">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,16 +21,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main_menu" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btnAddOrder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_input_add"
-        android:onClick="addOrder"
-        android:nestedScrollingEnabled="true" />
+    <include layout="@layout/content_order_screen" />
 
 </android.support.design.widget.CoordinatorLayout>
