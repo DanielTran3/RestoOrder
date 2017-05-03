@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/custom_item_dialog_height">
+
+    <TextView
+        android:id="@+id/custom_item_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/custom_item_dialog_title"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/confirm_item"
+            android:layout_width="@dimen/custom_item_dialog_button_width"
+            android:layout_height="@dimen/custom_item_dialog_button_height"
+            android:clickable="true"
+            android:text="@string/custom_item_dialog_confirm"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:onClick="confirmItem"/>
+
+        <Button
+            android:id="@+id/cancel_item"
+            android:layout_width="@dimen/custom_item_dialog_button_width"
+            android:layout_height="@dimen/custom_item_dialog_button_height"
+            android:layout_marginLeft="@dimen/custom_item_dialog_button_margin"
+            android:clickable="true"
+            android:text="@string/custom_item_dialog_cancel"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:onClick="cancelItem"/>
+    </LinearLayout>
+
+</LinearLayout>
