@@ -12,4 +12,8 @@
     tools:context="com.phomarble.restoorder.OrderScreen"
     tools:showIn="@layout/activity_order_screen">
 
+    <ListView
+        android:id="@+id/orderScreenList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 </RelativeLayout>

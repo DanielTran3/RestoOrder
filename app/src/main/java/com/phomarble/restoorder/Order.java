@@ -1,27 +1,38 @@
 package com.phomarble.restoorder;
 
+import java.util.ArrayList;
+
 public class Order {
-    private int quantity;
-    private MenuItem foodItem;
+    private String orderNumber;
+    private String tableNumber;
+    private ArrayList<MenuItem> itemsOrdered;
 
-    public Order(int quantity, MenuItem item) {
-        this.quantity = quantity;
-        this.foodItem = item;
+    public Order(String tableNumber) {
+        this.tableNumber = tableNumber;
+        this.itemsOrdered = new ArrayList<>();
     }
 
-    public void setQuantity (int newQuantity) {
-        this.quantity = newQuantity;
+    public String getOrderNumber() {
+        return orderNumber;
     }
 
-    public void setFoodItem (MenuItem newItem) {
-        this.foodItem = newItem;
+    public void setOrderNumber(String orderNumber) {
+        this.orderNumber = orderNumber;
     }
 
-    public int getQuantity () {
-        return this.quantity;
+    public String getTableNumber() {
+        return tableNumber;
     }
 
-    public MenuItem getFoodItem () {
-        return this.foodItem;
+    public void setTableNumber(String tableNumber) {
+        this.tableNumber = tableNumber;
+    }
+
+    public ArrayList<MenuItem> getItemsOrdered() {
+        return itemsOrdered;
+    }
+
+    public void setItemsOrdered(ArrayList<MenuItem> itemsOrdered) {
+        this.itemsOrdered = itemsOrdered;
     }
 }

@@ -15,4 +15,7 @@
     <!-- Nav Bar Strings -->
     <string name="chefs_view">Chef\'s View</string>
     <string name="waiters_view">Waiter\'s View</string>
+
+    <!-- Custom Dialog Box Strings -->
+    <string name="quantity_x">X</string>
 </resources>
