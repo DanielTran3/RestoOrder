@@ -1,14 +1,14 @@
 package com.phomarble.restoorder;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 
-public class OrderScreen extends AppCompatActivity {
+public class ChefsViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +18,15 @@ public class OrderScreen extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void addItem(View v) {
-        CustomItemDialog cid = new CustomItemDialog(this);
-        cid.show();
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.v("ChefsActivity", "+++ ON PAUSE +++");
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.v("ChefsActivity", "+++ ON RESUME +++");
+    }
 }
